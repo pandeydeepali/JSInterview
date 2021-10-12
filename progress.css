@@ -1,0 +1,15 @@
+.progress{
+    width:100%;
+    background-color: #ddd;
+}
+.my-bar{
+    width:1%;
+    height:30px;
+    background-color: green;
+}
+.btn-class{
+    height:30px;
+    width:20%;
+    margin-top:20px;
+
+}
