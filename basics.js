@@ -50,3 +50,23 @@ console.log(uniqueChars);
  }
 
  console.log(capatatise('hello'))
+
+
+ function createStack(){
+     return {
+         items:[],
+         push(item){
+             this.items.push(item)
+         },
+         pop(item){
+            this.items.pop(item)
+         }
+     };
+
+
+ }
+
+ const stack=createStack();
+ stack.push(5);
+ stack.push(10);
+ stack.pop();
