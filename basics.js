@@ -62,11 +62,14 @@ console.log(uniqueChars);
             this.items.pop(item)
          }
      };
-
-
- }
+  }
 
  const stack=createStack();
  stack.push(5);
  stack.push(10);
  stack.pop();
+
+
+let  arrayNumber= [[1, 2, 3, 4]];
+console.log(arrayNumber.map(number=>[number*3]))
+console.log(arrayNumber.flatMap(number => [number * 3])); 
