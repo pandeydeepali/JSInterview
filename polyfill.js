@@ -20,11 +20,12 @@ printMyName("Uttarakhand");
 
 Function.prototype.customBind=function(...args){
     let obj=this, params=args.slice(1);
+    console.log('custom bind', args)
     console.log(params)
     return function(...arg2){
         console.log(arg2)
         obj.apply(args[0], [...params, ...arg2])
-       
+        
     }
 }
 
@@ -38,12 +39,11 @@ printMyName2("Uttarakhand");
 
 
 Array.prototype.multiply=function(){
-    console.log('dfjdjfgd')
     let results=[]
-    // for(let i=0; i<this.length; i++){
-        for(i of this){
-            console.log('ddddybbtfftt',i)
-         results.push(i*2)
+     for(let i=0; i<this.length; i++){
+       // for(i of this){
+            console.log('ddddybbtfftt',this[i])
+         results.push(this[i]*2)
     }
 
     return [...results]

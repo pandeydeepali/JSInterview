@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Audio Exercise</title>
+    <meta name="viewport" content="width=device-width" user-scalable="yes">
+    <link rel='stylesheet' href="style.css" />
+</head>
+
+<body>
+    <div class="keys">
+        <div data-key="65" class="key">
+            <kbd>A</kbd>
+            <span class="sound">sound1</span>
+        </div>
+        <div data-key="66" class="key">
+            <kbd>B</kbd>
+            <span class="sound">sound2</span>
+        </div>
+        <div data-key="67" class="key">
+            <kbd>C</kbd>
+            <span class="sound">sound3</span>
+        </div>
+        <div data-key="68" class="key">
+            <kbd>D</kbd>
+            <span class="sound">sound4</span>
+        </div>
+        <div data-key="69" class="key">
+            <kbd>E</kbd>
+            <span class="sound">sound5</span>
+        </div>
+    </div>
+    <audio data-key="65" src='./sounds/sound1.wav'></audio>
+    <audio data-key="66" src='./sounds/sound2.wav'></audio>
+    <audio data-key="67" src='./sounds/sound1.wav'></audio>
+    <audio data-key="68" src='./sounds/sound2.wav'></audio>
+    <audio data-key="69" src='./sounds/sound1.wav'></audio>
+    <script src='./audiotag.js'></script>
+</body>
+
+</html>

@@ -16,6 +16,7 @@ const debounce = function(fn, delay){
     let timer;
     return function(){
         let args=arguments;
+        console.log('debouncing===>',args)
         clearTimeout(timer)
         timer=setTimeout(()=>{
             getData.apply(this, args)

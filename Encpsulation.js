@@ -1,5 +1,5 @@
 /**
- * Encapsulate properties or methods
+ * Encapsulate properties or methods 
  */
 
 class Student  
