@@ -1,6 +1,12 @@
 /**
  * Masking of any card number with modularity approach
+ * Functional Programming useful to build software by using 
+ * pure functions 
+ * Avoid shared states
+ * Avoid mutating state
+ * Avoids side effects
  */
+
 maskedNumbers=(number, type)=>{
     if(type==='Aadhar'){
         return number.substring(0, 10).replace(/./g,  '*')+number.substring(10)

@@ -4,6 +4,7 @@
 
 function x(){
     var x=c=14;
+    console.log("cccccc", c)
    function y(){
         let x = 10;
        console.log(c);

@@ -9,7 +9,7 @@ const CountingAnagrams = (str) => {
       hash = {};
     let count = 0;
     
-    console.log('',wordUnique)
+    console.log('@@@@@@@@@@@@@@@@',wordUnique)
     wordArray.forEach((word) => {
       // Key will be the sorted word e.g. cba will become abc
       let key = word.split('').sort().join('');
